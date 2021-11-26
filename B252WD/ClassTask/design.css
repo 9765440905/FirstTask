@@ -1,0 +1,52 @@
+.topbar{
+    margin:0;
+}
+.topbar{
+    background-color: hsl(165, 54%, 84%);
+    display:flex;
+    justify-content: space-between;
+}
+.menu{
+    padding-right: 25px;
+}
+.menu >ul >li{
+    display:inline;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-right: 1px solid red;
+}
+.menu > ul > li:last-child{
+    border-right: 1px solid skyblue;
+}
+.menu >ul >li>a{
+    text-decoration: none;
+    color:gray;
+}
+.menu >ul >li>a:hover{
+    color:hotpink;
+}
+.logo{
+    padding-left:20px;
+    padding-top:11px;
+}
+.banner{
+    height: 400px;
+    overflow: hidden;
+    background:url("https://thumbs.dreamstime.com/z/panoramic-landscape-multicolor-spring-flowers-nature-backg-park-background-91174058.jpg");
+    background-size:cover;
+}
+.container{
+    display:flex;
+    justify-content:center;
+    
+}
+.container>div{
+    text-align: -webkit-center;
+    width:33%;
+}
+.pic{
+    height: 50px;
+    width: 50px;
+    background-color: gray;
+    border-radius: 50px;
+}

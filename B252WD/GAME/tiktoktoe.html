@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <style>
+        .box {
+            background-color: bisque;
+            height: 100px;
+            border: 1px solid gray;
+            font-size: 66px;
+            cursor: pointer;
+        }
+
+        .box:hover {
+            background-color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container text-center mt-5">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-1 box" id="b1" onclick="handleClick(1)"></div>
+            <div class="col col-lg-1 box" id="b2" onclick="handleClick(2)"></div>
+            <div class="col col-lg-1 box" id="b3" onclick="handleClick(3)"></div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-1 box" id="b4" onclick="handleClick(4)"></div>
+            <div class="col col-lg-1 box" id="b5" onclick="handleClick(5)"></div>
+            <div class="col col-lg-1 box" id="b6" onclick="handleClick(6)"></div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-1 box" id="b7" onclick="handleClick(7)"></div>
+            <div class="col col-lg-1 box" id="b8" onclick="handleClick(8)"></div>
+            <div class="col col-lg-1 box" id="b9" onclick="handleClick(9)"></div>
+        </div>
+    </div>
+    <script src="./tiktoktoe.js"></script>
+</body>
+
+</html>

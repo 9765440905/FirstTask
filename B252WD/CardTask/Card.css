@@ -1,0 +1,58 @@
+body{
+    padding:0;
+    margin:0;
+}
+.container{
+    background-color: skyblue;
+    height: 600px;
+    background-image: linear-gradient(to right top, #9a8e49, #9b9f55, #9aaf63, #97c075, #91d18a, #73d59d, #4dd7b4, #00d8cc, #00c8e8, #00b5ff, #009bff, #5f77fb);
+    clip-path: polygon(0 0, 100% 0, 100% 63%, 0 100%);
+}
+.topbar,.banner{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:25px 100px 0 100px;
+}
+.banner{
+    margin-top: 25px;
+}
+.menu > ul > li{
+    display:inline;
+    padding-left: 1px;
+    margin-left: 100px;
+    border-radius: 3px;
+    font-family: 'STIX Two Math', serif;
+    text-align:center;
+}
+.menu > ul > li a{
+    text-decoration: none;
+    color: white;
+}
+.menu > ul >li >a:hover{
+    border: 2px solid white;
+}
+.landing{
+    font-family: 'Heebo', sans-serif;
+    font-size: 22px;
+}
+.graphic{
+    font-family: 'Heebo', sans-serif;
+    font-size:44px;
+}
+.design{
+    font-family: 'Heebo', sans-serif;
+    font-size:60px;
+    color:white;
+}
+.typo{
+    width: 40%;
+}
+.para{
+    line-height: 30px; 
+    font-family: 'Heebo', sans-serif;
+    color:white; 
+}
+.image > img{
+    width: 250px;
+}

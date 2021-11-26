@@ -1,0 +1,157 @@
+body {
+    font-family: Verdana;
+    width: 60%;
+}
+
+form {
+    width: 100%;
+    padding: 20px;
+    font-size: 15px;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+#head {
+    text-align: center;
+}
+
+#content1 {
+    width: 100%;
+}
+
+.name {
+    width: 45%;
+}
+
+.email {
+    width: 91%;
+}
+
+.tablediv {
+    overflow-x: auto;
+}
+
+.table {
+    width: auto;
+    height: auto;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.star {
+    color: red;
+}
+
+.tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.th1 {
+    padding-left: 60px;
+    text-align: center;
+}
+
+.th2 {
+    padding-left: 75px;
+    text-align: center;
+}
+
+.td1 {
+    padding-bottom: 10px;
+}
+
+.rating-wrapper label:after {
+    content: "\2605";
+    position: absolute;
+    font-size: 35px;
+    display: inline;
+    color: yellow;
+    opacity: 0;
+}
+
+.rating-wrapper label:hover:after {
+    opacity: 1;
+}
+
+.rating-wrapper {
+    margin-bottom: 0px;
+}
+
+.rating {
+    display: inline-block;
+    position: relative;
+    font-size: 50px;
+}
+
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+
+.rating label:last-child {
+    position: static;
+}
+
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+
+.rating label:last-child .icon {
+    color: #000;
+}
+
+.rating:not(:hover) label input:checked~.icon,
+.rating:hover label:hover input~.icon {
+    color: rgb(221, 221, 11);
+}
+
+.rating label input:focus:not(:checked)~.icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px yellowgreen;
+}
+
+textarea {
+    max-width: 100%;
+}
+
+button {
+    background-color: darkgrey;
+    border: 1px solid #777;
+    border-radius: 2px;
+    font-family: inherit;
+    font-size: 20px;
+    display: block;
+    /* width: 100%; */
+    margin-top: 10px;
+    margin-bottom: 20px;
+}

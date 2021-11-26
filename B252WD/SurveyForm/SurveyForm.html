@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Survey Form using HTML and CSS</title>
+    <link rel="stylesheet" href="SurveyForm.css">
+</head>
+<body>
+    <h1>GUVI Survey Form</h1>
+    <form id="form">
+        <div class="form-control">
+            <label for="name" id="label-name">
+                Name</label>
+            <input type="text" id="" placeholder="Enter your name" />
+        </div>
+        <div class="form-control">
+            <label for="Email" id="email">
+                Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+        <div class="form-control">
+            <label for="Age" id="label-age">
+                Age </label>
+            <input type="number" placeholder="Enter your age">
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+                Which option best describe you?</label>
+            <select name="student" id="role">
+                <option value="student">Student</option>
+                <option value="Intern">Intern</option>
+                <option value="Professional">Professional</option>
+                <option value="Other">Other</option>
+            </select>
+            <div class="form-control">
+                <label> Would you recommed GUVI to a friend?</label>
+                <label for="recommed-1">
+                    <input type="radio" id="recommed-1" name="recommed">Yes</label>
+                </label>
+                <label for="recommed-2">
+                    <input type="radio" id="recommed-2" name="recommed">No</label>
+                </label>
+                <div class="form-control">
+                    <label>Languages and Frameworks known
+                        <small>(Check all that apply)</small>
+                    </label>
+                    <label for="inp-1">
+                        <input type="checkbox" name="inp">C</input></label>
+                    <label for="inp-2">
+                        <input type="checkbox" name="inp">C++</input></label>
+                    <label for="inp-3">
+                        <input type="checkbox" name="inp">C#</input></label>
+                    <label for="inp-4">
+                        <input type="checkbox" name="inp">Java</input></label>
+                    <label for="inp-5">
+                        <input type="checkbox" name="inp">Python</input></label>
+                    <label for="inp-6">
+                        <input type="checkbox" name="inp">JavaScript</input></label>
+                    <label for="inp-7">
+                        <input type="checkbox" name="inp">React</input></label>
+                    <label for="inp-8">
+                        <input type="checkbox" name="inp">Angular</input></label>
+                    <label for="inp-9">
+                        <input type="checkbox" name="inp">Django</input></label>
+                    <label for="inp-10">
+                        <input type="checkbox" name="inp">Spring</input></label>
+                </div>
+
+                <div class="form-control">
+                    <lable> Your Experience <span class="star"></span></lable><br>
+                    <div class="rating">
+                        <label>
+                            <input type="radio" name="stars" value="1" />
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="2" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="3" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="4" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="stars" value="5" />
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                            <span class="icon">★</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="comment">Any comments or suggestions</label>
+                    <textarea name="comment" id="comment" placeholder="Enter your comment here"></textarea>
+                </div>
+                <button type="submit" value="submit">Submit</button>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

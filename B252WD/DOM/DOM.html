@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="foo()">Click</button>
+    <script>
+        var word = ["world", "marsh", "moon"]
+        var click = 0;
+        function foo() {
+            var my = document.createElement("h1");
+            my.innerText = "Hello" + word[click];
+            document.body.appendChild(my);
+            if (click >= word.length - 1) {
+                click = 0;
+            } else {
+                click++;
+            }
+        }
+    </script>
+</body>
+
+</html>
